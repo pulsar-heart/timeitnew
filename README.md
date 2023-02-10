@@ -87,7 +87,7 @@ Complete the following table with actual measured runtimes by substituting the v
 
 |                        | `xs=("1"*65536)` | `xs=([1]*65536)` | `xs=deque([1]*65536)` |
 | ---------------------- | ---------------- | ---------------- | --------------------- |
-| `check_palindrome_1`   |                4.38msec  |          4.22msec        |    i64.8msec                   |
+| `check_palindrome_1`   |                4.38msec  |          4.22msec        |    64.8msec                   |
 | `check_palindrome_2`   |             3.24msec     |   2.86msec               |             3.34msec          |
 
 You should observe that one of these entries is significantly slower than the others.
