@@ -26,22 +26,10 @@ and make sure you understand how they work.
 Take a guess at which one will be faster,
 and tell the person sitting next to you what your guess is.
 
-<!--
-   Complete the following table, where each entry is the runtime of the corresponding function when the input `container` is of the corresponding type.
-   Write the runtimes in terms of `n=len(container)` using big-O notation.
-
    |                        | `str` | `list` | `deque` |
    | ---------------------- | ----- | ------ | ------- |
-   | `check_palindrome_1`   |  O(n) |  O(n)      | O(n**2)        |
-   | `check_palindrome_2`   |   O(n)    |  O(n)      |   O(n)      |
-
-   **HINT:**
-   The runtimes for indexing into a string are the same as those for indexing a list, which is O(1).
-   The runtime for indexing into a deque is O(n).
-
-   **HINT:**
-   One of these entries should be asymptotically larger than the others.
--->
+   | `check_palindrome_1`   |  O(n) |  O(n)      |' O(n**2)'   |
+   | `check_palindrome_2`   |   O(n)    |  O(n)  |   O(n)      |
 
 **Part 1:**
 
@@ -87,8 +75,8 @@ Complete the following table with actual measured runtimes by substituting the v
 
 |                        | `xs=("1"*65536)` | `xs=([1]*65536)` | `xs=deque([1]*65536)` |
 | ---------------------- | ---------------- | ---------------- | --------------------- |
-| `check_palindrome_1`   |                4.38msec  |          4.22msec        |    64.8msec                   |
-| `check_palindrome_2`   |             3.24msec     |   2.86msec               |             3.34msec          |
+| `check_palindrome_1`   |       4.38msec  |    4.22msec    |    64.8msec         |
+| `check_palindrome_2`   |    3.24msec     |   2.86msec      |       3.34msec      |
 
 You should observe that one of these entries is significantly slower than the others.
 This tells us that the runtime of a function depends on: (1) the algorithm that it is implemented with, and (2) the data types it is run on.
